@@ -5,45 +5,71 @@ int main(){
     printf ("SuperTrunfo Paises\n");
 
 //Variaveis
-char cidadeA1[20],cidadeB1[20];
-int populacaoA1,populacaoB1,pontosturisticosA1,pontosturisticosB1;
-float areaA1,areaB1,pibA1,pibB1;
+char cidadeA1[20], cidadeB1[20];
+int populacaoA1, populacaoB1;
+int pontosturisticosA1, pontosturisticosB1;
+float areaA1, areaB1;
+double pibA1, pibB1;
 
 //Declaração das Variaveis Primeira Carta
 printf ("Dados da Primeira Carta:\n");
 //Nome:
 printf ("Nome da Cidade:\n");
-scanf (" %[^\n]",&cidadeA1);
+scanf (" %[^\n]", cidadeA1);
+
 //População
 printf ("População:\n");
-scanf ("%d",&populacaoA1);
+scanf ("%d", &populacaoA1);
+
 //Pontos Turisticos
 printf ("Pontos Turisticos:\n");
-scanf("%d",&pontosturisticosA1);
+scanf ("%d", &pontosturisticosA1);
+
 //Area
 printf ("Area da Cidade:\n");
-scanf("%f",&areaA1);
+scanf ("%g", &areaA1);
+
 //PIB
 printf ("PIB da Cidade:\n");
-scanf("%f",&pibA1);
+scanf ("%lf", &pibA1);
 
 //Declaração das Variaveis Segunda Carta
 printf ("Dados da Segunda Carta:\n");
 //Nome:
 printf ("Nome da Cidade:\n");
-scanf (" %[^\n]",&cidadeB1);
+scanf (" %[^\n]", cidadeB1);
+
 //População
 printf ("População:\n");
-scanf ("%d",&populacaoB1);
+scanf ("%d", &populacaoB1);
+
 //Pontos Turisticos
 printf ("Pontos Turisticos\n");
-scanf("%d",&pontosturisticosB1);
+scanf ("%d", &pontosturisticosB1);
+
 //Area
 printf ("Area da Cidade\n");
-scanf("%f",&areaB1);
+scanf ("%g", &areaB1);
+
 //PIB
 printf ("PIB da Cidade:\n");
-scanf("%f",&pibB1);
+scanf ("%lf", &pibB1);
+
+//Impressão das 2 cartas com os dados colocados
+printf ("Carta A01\n");
+printf ("Cidade: %s\n", cidadeA1);
+printf ("População: %d milhões\n", populacaoA1);
+printf ("Pontos Turisticos: %d\n", pontosturisticosA1);
+printf ("Area: %g km²\n", areaA1);
+printf ("PIB: %.0f\n", pibA1);
+
+printf ("Carta B01\n");
+printf ("Cidade: %s\n", cidadeB1);
+printf ("População: %d milhões\n", populacaoB1);
+printf ("Pontos Turisticos: %d\n", pontosturisticosB1);
+printf ("Area: %g km²\n", areaB1);
+printf ("PIB: %.0f\n", pibB1);
+
 
 
 }
