@@ -94,8 +94,28 @@ printf ("PIB per capta: %.0f\n", pibpercaptaB1);
 //Comparação das Cartas
 printf("##Comparação das Cartas!##\n(Carta A ganha = 1 / Carta B ganha = 0)\n");
 printf("População: %d\n",(populacaoA1 > populacaoB1));
+printf("Pontos Turisticos: %d\n",(pontosturisticosA1 > pontosturisticosB1));
+printf("Área: %d\n", (areaA1 > areaB1));
+printf("População por Área: %d\n", (populacaoA1 > populacaoB1));
+printf("PIB: %d\n", (pibA1 > pibB1));
+printf("PIB per capta: %d\n", (pibpercaptaA1 > pibpercaptaB1));
 
+/*
+- Super-Poder
+- Inverso da Pop. por area */
 
+float superpoderA1, superpoderB1;
+float populacaoporareainvA1, populacaoporareainvB1;
+populacaoporareainvA1 = 1 / populacaoporareaA1;
+populacaoporareainvB1 = 1 / populacaoporareaB1;
 
+//Super-Poderes (Soma de tudo)
+superpoderA1 = (float) areaA1 + populacaoA1 + pibA1 + pibpercaptaA1 + pontosturisticosA1 + populacaoporareainvA1;
+superpoderB1 = (float) areaB1 + populacaoB1 + pibB1 + pibpercaptaB1 + pontosturisticosB1 + populacaoporareainvB1;
+
+printf ("##Super-Poder!##\n(Carta A ganha = 1 / Carta B ganha = 0)\n");
+printf ("Super Poder A1: %.0f\n", superpoderA1);
+printf ("Super Poder B2: %.0f\n", superpoderB1);
+printf ("Resultado: %d\n", (superpoderA1 > superpoderB1));
 
 }
