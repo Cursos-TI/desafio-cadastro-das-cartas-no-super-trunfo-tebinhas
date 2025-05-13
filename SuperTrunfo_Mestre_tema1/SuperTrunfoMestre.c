@@ -3,7 +3,7 @@
 int main(){
 
 //Atributos
-char cidadeA1[20], cidadeB1[20], estadoA1, estadoB1;
+char cidadeA1[20], cidadeB1[20], estadoA1[2], estadoB1[2];
 int pontosturisticosA1, pontosturisticosB1;
 unsigned long int populacaoA1, populacaoB1;
 double pibA1, pibB1;
@@ -16,7 +16,7 @@ printf ("##SuperTrunfo Mestre!##\n");
 printf ("Dados da Primeira Carta:\n");
 
 //Nome:
-printf ("Nome da Cidade:\n");
+printf ("Estado:\n");
 scanf ("%s", &estadoA1);
 
 printf ("Nome da Cidade:\n");
@@ -41,7 +41,7 @@ scanf ("%lf", &pibA1);
 //Declaração das Variaveis Segunda Carta
 printf ("Dados da Segunda Carta:\n");
 
-printf ("Nome da Cidade:\n");
+printf ("Estado:\n");
 scanf ("%s", &estadoB1);
 
 //Nome:
@@ -74,7 +74,7 @@ populacaoporareaB1 = populacaoB1 / areaB1;
 //Carta A1
 printf ("Carta A1\n");
 printf ("Estado: %s, Cidade: %s\n", estadoA1 ,cidadeA1);
-printf ("População: %.0f\n", populacaoA1);
+printf ("População: %lu\n", populacaoA1);
 printf ("Pontos Turisticos: %d\n", pontosturisticosA1);
 printf ("Área: %.0f km²\n", areaA1);
 printf ("População por área: %.0f\n", populacaoporareaA1);
@@ -84,10 +84,18 @@ printf ("PIB per capta: %.0f\n", pibpercaptaA1);
 //Carta B1
 printf ("Estado: %s, Cidade: %s\n", estadoB1 ,cidadeB1);
 printf ("Cidade: %s\n", cidadeB1);
-printf ("População: %.0f\n", populacaoB1);
+printf ("População: %lu\n", populacaoB1);
 printf ("Pontos Turisticos: %d\n", pontosturisticosB1);
 printf ("Área: %.0f km²\n", areaB1);
 printf ("População por área: %.0f\n", populacaoporareaB1);
 printf ("PIB: %.0f\n", pibB1);
 printf ("PIB per capta: %.0f\n", pibpercaptaB1);
+
+//Comparação das Cartas
+printf("##Comparação das Cartas!##\n(Carta A ganha = 1 / Carta B ganha = 0)\n");
+printf("População: %d\n",(populacaoA1 > populacaoB1));
+
+
+
+
 }
